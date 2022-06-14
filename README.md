@@ -13,27 +13,22 @@
 <a href="#"><img title="Language" src="https://img.shields.io/github/license/Pruthviraj-S/Computer-Forensics?style=for-the-badge"></a>
 </p>
 
-
-
-* CFREDS ARCHIVE FOR DFIS CASES
-https://cfreds-archive.nist.gov/
-
-* Guide (ONLY SEEE WHEN NEEDED)
-https://medium.com/@sshekhar01/cfreds-project-hacking-case-challenge-writeup-6a52883eac0b
 # Computer Forensic Reference Data Sets (CFReDS)
 
+
 ## HACKING CASE 
-**Any names in the forensic image are fictional and do no refer to real people.**
+### Scenario:
 > On 09/20/04 , a Dell CPi notebook computer, serial # VLQLW, was found     abandoned along with a wireless PCMCIA card and an external homemade 802.11b antennae. It is suspected that this computer was used for hacking purposes, although cannot be tied to a hacking suspect, G=r=e=g S=c=h=a=r=d=t. (The equal signs are just to prevent web crawlers from indexing this name; there are no equal signs in the image files.) 
     
 > Schardt also goes by the online nickname of “Mr. Evil” and some of his associates have said that he would park his vehicle within range of Wireless Access Points (like Starbucks and other T-Mobile Hotspots) where he would then intercept internet traffic, attempting to get credit card numbers, usernames & passwords.
 
 > Find any hacking software, evidence of their use, and any data that might have been generated. Attempt to tie the computer to the suspect, G=r=e=g S=c=h=a=r=d=t.
 
-### Evidences
+**Any names in the forensic image are fictional and do no refer to real people.**
+### Evidences:
 * **1. What is the image hash? Does the acquisition and verification hash match?**
     ```
-    Ans: aee4fcd9301c03b3b054623ca261959a
+    Ans: aee4fcd9301c03b3b054623ca261959a, no acquistion hash found.
     ```
 * **2. What operating system was used on the computer?**
     ```
@@ -128,6 +123,13 @@ https://medium.com/@sshekhar01/cfreds-project-hacking-case-challenge-writeup-6a5
 
 * **31. Perform a Anti-Virus check. Are there any viruses on the computer?**
 
+### Refrences
+
+* **CFREDS ARCHIVE FOR DFIS CASES**
+    - https://cfreds-archive.nist.gov/
+
+<!-- * **Guide (ONLY SEEE WHEN NEEDED)**
+    - https://medium.com/@sshekhar01/cfreds-project-hacking-case-challenge-writeup-6a52883eac0b -->
 ## Disclaimer
 Contents of this repository are only meant for learning the aspects of computer forensics. Only use for educational purposes
 ## Contact
