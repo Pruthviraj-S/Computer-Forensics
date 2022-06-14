@@ -43,8 +43,8 @@ https://medium.com/@sshekhar01/cfreds-project-hacking-case-challenge-writeup-6a5
 * **9. How many accounts are recorded (total number)?**
     `Ans: 5, Administrator,Guest,HelpAssistant,Mr.Evil,SUPPORT_388945a0`
 
-## 10. What is the account name of the user who mostly uses the computer?
-
+* **10. What is the account name of the user who mostly uses the computer?**
+    `Ans: Mr.Evil, 15 logins`
 ## 11. Who was the last user to logon to the computer?
 
 12. A search for the name of “G=r=e=g S=c=h=a=r=d=t” reveals multiple hits. One of these proves that G=r=e=g S=c=h=a=r=d=t is Mr. Evil and is also the administrator of this computer. What file is it? What software program does this file relate to?
