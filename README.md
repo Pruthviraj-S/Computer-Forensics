@@ -9,9 +9,10 @@ HACKING CASE :- encase img and 2nd part. use encase imager
 `Ans: aee4fcd9301c03b3b054623ca261959a`
 ## 2. What operating system was used on the computer?
 `Ans: Windows XP`
-<img src='./HackerCase imgs/que2.png'>
+<img src='./HackerCase imgs/que2.png'></img>
 ## 3. When was the install date?
-Ans:
+Ans: 19-08-2004 10.20.37 PM (2004-08-19 16:50:37 UTC)
+<img src='./HackerCase imgs/que2.png'></img>
 ## 4. What is the timezone settings?
 
 ## 5. Who is the registered owner?
