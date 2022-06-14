@@ -3,16 +3,17 @@
 ## CFREDS ARCHIVE FOR DFIS CASES
 https://cfreds-archive.nist.gov/
 
-HACKING CASE :- encase img and 2nd part. use encase imager
-# Que:
-## 1. What is the image hash? Does the acquisition and verification hash match?
-`Ans: aee4fcd9301c03b3b054623ca261959a`
-## 2. What operating system was used on the computer?
-`Ans: Windows XP`
-<img src='./HackerCase imgs/que2.png'></img>
-## 3. When was the install date?
-Ans: 19-08-2004 10.20.37 PM (2004-08-19 16:50:37 UTC)
-<img src='./HackerCase imgs/que2.png'></img>
+# HACKING CASE :- encase img and 2nd part. use encase imager
+
+## Evidences
+* **1. What is the image hash? Does the acquisition and verification hash match?**
+```Ans: aee4fcd9301c03b3b054623ca261959a```
+* **2. What operating system was used on the computer?**
+```Ans: Windows XP```
+![Que2](/HackerCase%20imgs/que2.png)
+* **3. When was the install date?**
+```Ans: 19-08-2004 10.20.37 PM (2004-08-19 16:50:37 UTC)```
+![Que3](/HackerCase%20imgs/que3.png)
 ## 4. What is the timezone settings?
 
 ## 5. Who is the registered owner?
