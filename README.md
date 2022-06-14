@@ -3,6 +3,9 @@
 ## CFREDS ARCHIVE FOR DFIS CASES
 https://cfreds-archive.nist.gov/
 
+## Guide (ONLY SEEE WHEN NEEDED)
+https://medium.com/@sshekhar01/cfreds-project-hacking-case-challenge-writeup-6a52883eac0b
+
 # HACKING CASE :- encase img and 2nd part. use encase imager
 
 ## Evidences
@@ -11,17 +14,24 @@ https://cfreds-archive.nist.gov/
 * **2. What operating system was used on the computer?**
     ```Ans: Windows XP```
     ![Que2](/HackerCase%20imgs/que2.png)
+    ![Que2_2](/HackerCase%20imgs/que2_2.png)
 * **3. When was the install date?**
     ```Ans: 19-08-2004 10.20.37 PM (2004-08-19 16:50:37 UTC)```
+    * FTK
     ![Que3](/HackerCase%20imgs/que3.png)
-## 4. What is the timezone settings?
-
-## 5. Who is the registered owner?
-
-## 6. What is the computer account name?
-
-## 7. What is the primary domain name?
-
+    * Autopsy
+    ![Que3a](/HackerCase%20imgs/que3_a.png)
+* **4. What is the timezone settings?**
+    `Ans: Central Daylight Time`
+    ![Que4](/HackerCase%20imgs/que4.png)
+* **5. Who is the registered owner?**
+    `Ans: Greg schardt`
+    ![Que5](/HackerCase%20imgs/que5.png)
+* **6. What is the computer account name?**
+    `Ans: N-1A9ODN6ZXK4LQ`
+    ![Que6](/HackerCase%20imgs/que6.png)
+* **7. What is the primary domain name?**
+    `Ans: `
 ## 8. When was the last recorded computer shutdown date/time?
 
 ## 9. How many accounts are recorded (total number)?
