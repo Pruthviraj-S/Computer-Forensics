@@ -33,36 +33,36 @@
     ```
     Ans: Windows XP Professsional
     ```
-    ![Que2](/assests/que2.png?raw=true)
-    ![Que2_2](/assests/que2_2.png?raw=true)
+    ![Que2](../assests/que2.png?raw=true)
+    ![Que2_2](../assests/que2_2.png?raw=true)
 * **When was the install date?**
     ```
     Ans: Thursday, August 19, 2004 10:48:27 PM UTC
     ```
     * FTK
-    ![Que3](/assests/que3.png?raw=true)
+    ![Que3](../assests/que3.png?raw=true)
     * Autopsy
-    ![Que3a](/assests/que3_a.png?raw=true)
+    ![Que3a](../assests/que3_a.png?raw=true)
 * **What is the timezone settings?**
     ```
     Ans: Central Daylight Time
     ```
     * FTK
-    ![Que4](/assests/que4.png?raw=true)
+    ![Que4](../assests/que4.png?raw=true)
     * Autopsy
-    ![Que4a](/assests/que4_a.png?raw=true)
+    ![Que4a](../assests/que4_a.png?raw=true)
 * **Who is the registered owner?**
     ```
     Ans: Greg schardt
     ```
-    ![Que5](/assests/que5.png?raw=true)
+    ![Que5](../assests/que5.png?raw=true)
     * Autopsy
     `Refer Que 3 autopsy img`
 * **What is the computer account name?**
     ```
     Ans: Mr.Evil w.r.t autopsy, FTK shows N-1A9ODN6ZXK4LQ as computer name.
     ```
-    ![Que6](/assests/que6.png?raw=true)
+    ![Que6](../assests/que6.png?raw=true)
 * **What is the primary domain name?**
     ```
     Ans: N-1A9ODN6ZXK4LQ w.r.t autopsy, FTK show Mr.Evil
