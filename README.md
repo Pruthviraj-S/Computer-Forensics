@@ -10,12 +10,13 @@
 <p align="center">
 <a href="https://github.com/Pruthviraj-S"><img title="Author" src="https://img.shields.io/badge/Author-Pruthviraj--S-red.svg?style=for-the-badge&logo=github"></a>
 <a href="#"><img title="Open Source" src="https://img.shields.io/badge/Open%20Source-%E2%9D%A4-green?style=for-the-badge"></a>
-<a href="#"><img title="Language" src="https://img.shields.io/github/license/Pruthviraj-S/Computer-Forensics?style=for-the-badge"></a>
+<a href="#"><img title="License" src="https://img.shields.io/github/license/Pruthviraj-S/Computer-Forensics?style=for-the-badge"></a>
+<a href="#"><img title="Autopsy" src="https://img.shields.io/badge/Tool-Autopsy-orange.svg?style=for-the-badge&logo="></a>
 </p>
 
 # Computer Forensic Reference Data Sets(CFReDS) Case Studies
 
-## HACKING CASE 
+## Case 1: Dell Hacking Case
 ### Scenario:
 > On 09/20/04 , a Dell CPi notebook computer, serial # VLQLW, was found     abandoned along with a wireless PCMCIA card and an external homemade 802.11b antennae. It is suspected that this computer was used for hacking purposes, although cannot be tied to a hacking suspect, G=r=e=g S=c=h=a=r=d=t. (The equal signs are just to prevent web crawlers from indexing this name; there are no equal signs in the image files.) 
     
@@ -135,4 +136,4 @@ Contents of this repository are only meant for learning the aspects of computer 
 <p align='left'><a href='https://discord.com/channels/@me/495023063486824467'><img alt="Discord" src="https://img.shields.io/badge/Discord%20-%237289DA.svg?&style=for-the-badge&logo=discord&logoColor=white"/></a></p>
 
 
-<!-- https://gist.github.com/joncardasis/e6494afd538a400722545163eb2e1fa5 -->
+<!-- https://gist.github.com/joncardasis/e6494afd538a400722545163eb2e1fa5 , https://simpleicons.org/-->
