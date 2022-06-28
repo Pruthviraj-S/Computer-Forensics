@@ -62,7 +62,7 @@
     ```
     Ans: Mr.Evil w.r.t autopsy, FTK shows N-1A9ODN6ZXK4LQ as computer name.
     ```
-    ![Que6](/HackerCase%20imgs/que6.png)
+    ![Que6](../assets/que6.png?raw=true)
 * **What is the primary domain name?**
     ```
     Ans: N-1A9ODN6ZXK4LQ w.r.t autopsy, FTK show Mr.Evil
@@ -133,5 +133,6 @@
 Contents of this repository are only meant for learning the aspects of computer forensics. Only use for educational purposes
 ## Contact
 <p align='left'><a href='https://discord.com/channels/@me/495023063486824467'><img alt="Discord" src="https://img.shields.io/badge/Discord%20-%237289DA.svg?&style=for-the-badge&logo=discord&logoColor=white"/></a></p>
+
 
 <!-- https://gist.github.com/joncardasis/e6494afd538a400722545163eb2e1fa5 -->
