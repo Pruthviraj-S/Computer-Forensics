@@ -13,7 +13,7 @@
 <a href="#"><img title="Language" src="https://img.shields.io/github/license/Pruthviraj-S/Computer-Forensics?style=for-the-badge"></a>
 </p>
 
-# Computer Forensic Reference Data Sets (CFReDS)
+# Computer Forensic Reference Data Sets(CFReDS) Case Studies
 
 ## HACKING CASE 
 ### Scenario:
