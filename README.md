@@ -33,36 +33,36 @@
     ```
     Ans: Windows XP Professsional
     ```
-    ![Que2](/HackerCase%20imgs/que2.png)
-    ![Que2_2](/HackerCase%20imgs/que2_2.png)
+    ![Que2](/assests/que2.png?raw=true)
+    ![Que2_2](/assests/que2_2.png?raw=true)
 * **When was the install date?**
     ```
     Ans: Thursday, August 19, 2004 10:48:27 PM UTC
     ```
     * FTK
-    ![Que3](/HackerCase%20imgs/que3.png)
+    ![Que3](/assests/que3.png?raw=true)
     * Autopsy
-    ![Que3a](/HackerCase%20imgs/que3_a.png)
+    ![Que3a](/assests/que3_a.png?raw=true)
 * **What is the timezone settings?**
     ```
     Ans: Central Daylight Time
     ```
     * FTK
-    ![Que4](/HackerCase%20imgs/que4.png)
+    ![Que4](/assests/que4.png?raw=true)
     * Autopsy
-    ![Que4a](/HackerCase%20imgs/que4_a.png)
+    ![Que4a](/assests/que4_a.png?raw=true)
 * **Who is the registered owner?**
     ```
     Ans: Greg schardt
     ```
-    ![Que5](/HackerCase%20imgs/que5.png)
+    ![Que5](/assests/que5.png?raw=true)
     * Autopsy
     `Refer Que 3 autopsy img`
 * **What is the computer account name?**
     ```
     Ans: Mr.Evil w.r.t autopsy, FTK shows N-1A9ODN6ZXK4LQ as computer name.
     ```
-    ![Que6](../assets/que6.png?raw=true)
+    ![Que6](/assests/que6.png?raw=true)
 * **What is the primary domain name?**
     ```
     Ans: N-1A9ODN6ZXK4LQ w.r.t autopsy, FTK show Mr.Evil
