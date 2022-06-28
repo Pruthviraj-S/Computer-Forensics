@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-<a href="#"><img title="dfis" src="https://e-discovery.ng/wp-content/uploads/2021/07/Digital-Forensics-styled.png" width='256'></a> 
+<a href="#"><img title="dfis" src="../assets/pvs.png" width='512'></a> 
 <p align='center' style="font-size:48px; font-family: cursive; "> Computer Forensics </p>
 </p>
 
