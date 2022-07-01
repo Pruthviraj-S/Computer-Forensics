@@ -27,21 +27,25 @@
 > Schardt also goes by the online nickname of “Mr. Evil” and some of his associates have said that he would park his vehicle within range of Wireless Access Points (like Starbucks and other T-Mobile Hotspots) where he would then intercept internet traffic, attempting to get credit card numbers, usernames & passwords.
 
 > Find any hacking software, evidence of their use, and any data that might have been generated. Attempt to tie the computer to the suspect, G=r=e=g S=c=h=a=r=d=t.
+
 ```yaml
 Any names in the forensic image are fictional and do not refer to real people.
 ```
+
 ### Pre-requisites
 * [Autopsy](https://www.autopsy.com/download/), a free forensic imager tool.
 * [Hacking Case Image](https://cfreds-archive.nist.gov/Hacking_Case.html), from CFREDS archives.
 * [FTK](https://www.exterro.com/product-digital-forensics#PD_forensic-toolkit-ftk), paid imaging tool (optional).
+
 ### Evidences:
 * **What is the image hash? Does the acquisition and verification hash match?**
     ```
-    Ans: aee4fcd9301c03b3b054623ca261959a, Hash matches.
+    Ans: aee4fcd9301c03b3b054623ca261959a, MD5 Hash matches.
 
     ⮞ Found in Data Sources-> File Metadata
     ```
     ![Que1](assets/Images/que1.png?raw=true)
+
 * **What operating system was used on the computer?**
     ```
     Ans: Windows XP Professsional
@@ -51,6 +55,7 @@ Any names in the forensic image are fictional and do not refer to real people.
     ```
     ![Que2](assets/Images/que2.png?raw=true)
     ![Que2_2](assets/Images/que2_2.png?raw=true)
+
 * **When was the install date?**
     ```
     Ans: Thursday, August 19, 2004 10:48:27 PM UTC
@@ -59,6 +64,7 @@ Any names in the forensic image are fictional and do not refer to real people.
     ⮞ Key Path: “C:\Windows\system32\config\Software\Microsoft\Windows NT\CurrentVersion\InstallDate”
     ```
     ![Que3](assets/Images/que3_a.png?raw=true)
+
 * **What is the timezone settings?**
     ```
     Ans: Central Daylight Time
@@ -67,6 +73,7 @@ Any names in the forensic image are fictional and do not refer to real people.
     ⮞ Key Path: “C:\windows\system32\config\system\CurrentControlSet\Control\TimeZoneInformation”
     ```
     ![Que4](assets/Images/que4_a.png?raw=true)
+
 * **Who is the registered owner?**
     ```
     Ans: Greg schardt
@@ -75,6 +82,7 @@ Any names in the forensic image are fictional and do not refer to real people.
     ⮞ Key Path: “C:\windows\system32\config\software\Microsoft\Windows NT\CurrentVersion\RegisteredOwner”
     ```
     ![Que5](assets/Images/que3_a.png?raw=true)
+
 * **What is the computer account name?**
     ```
     Ans: Mr.Evil w.r.t autopsy, FTK shows N-1A9ODN6ZXK4LQ as computer name.
@@ -83,6 +91,7 @@ Any names in the forensic image are fictional and do not refer to real people.
     ⮞ Registry Key: “HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon”
     ```
     ![Que6](assets/Images/que6_a.png?raw=true)
+
 * **What is the primary domain name?**
     ```
     Ans: N-1A9ODN6ZXK4LQ w.r.t autopsy, FTK show Mr.Evil
@@ -91,6 +100,7 @@ Any names in the forensic image are fictional and do not refer to real people.
     ⮞ Key Path: “C:\windows\system32\config\software\Microsoft\Windows NT\CurrentVersion\Winlogon”
     ```
     ![Que7](assets/Images/que7.png?raw=true)
+
 * **When was the last recorded computer shutdown date/time?**
     ```
     Ans: ShutdownTime	REG_BIN	C4 FC 00 07 4D 8C C4 01 , TIME:- 2004-08-27 15:46:33.1092164 Z UTC
@@ -101,6 +111,7 @@ Any names in the forensic image are fictional and do not refer to real people.
     ![Que8](assets/Images/que8.png?raw=true)
     ![Que8_2](assets/Images/que8_2.png?raw=true) <br>
     `Converter: https://www.digital-detective.net/dcode/`
+
 * **How many accounts are recorded (total number)?**
     ```
     Ans: 5, Administrator,Guest,HelpAssistant,Mr.Evil,SUPPORT_388945a0
@@ -115,6 +126,7 @@ Any names in the forensic image are fictional and do not refer to real people.
     ⮞ Found in OS  accounts tab in tree view.
     ```
     ![Que10](assets/Images/que10.png?raw=true)
+
 * **Who was the last user to logon to the computer?**
     ```
     Ans: Mr.Evil
@@ -122,6 +134,7 @@ Any names in the forensic image are fictional and do not refer to real people.
     ⮞ Key Path: “C:\windows\system32\config software\Microsoft\Windows NT\CurrentVersion\Winlogon”
     ```
     ![Que11](assets/Images/que11.png?raw=true)
+
 * **A search for the name of “G=r=e=g S=c=h=a=r=d=t” reveals multiple hits. One of these proves that G=r=e=g S=c=h=a=r=d=t is Mr. Evil and is also the administrator of this computer. What file is it? What software program does this file relate to?**
     ```
     Ans:
