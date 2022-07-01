@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-<a href="#"><img title="dfis" src="assets/logo.png" width='256'></a> 
+<a href="#"><img title="dfis" src="../assets/logo.png" width='256'></a> 
 <p align='center' style="font-size:48px; font-family: cursive; "> Computer Forensics </p>
 </p>
 
@@ -34,60 +34,60 @@
     ```
     Ans: Windows XP Professsional
     ```
-    ![Que2](assets/que2.png?raw=true)
-    ![Que2_2](assets/que2_2.png?raw=true)
+    ![Que2](../assets/que2.png?raw=true)
+    ![Que2_2](../assets/que2_2.png?raw=true)
 * **When was the install date?**
     ```
     Ans: Thursday, August 19, 2004 10:48:27 PM UTC
     ```
     * FTK <br>
-    ![Que3](assets/que3.png?raw=true)
+    ![Que3](../assets/que3.png?raw=true)
     * Autopsy <br>
-    ![Que3a](assets/que3_a.png?raw=true)
+    ![Que3a](../assets/que3_a.png?raw=true)
 * **What is the timezone settings?**
     ```
     Ans: Central Daylight Time
     ```
     * FTK <br>
-    ![Que4](assets/que4.png?raw=true)
+    ![Que4](../assets/que4.png?raw=true)
     * Autopsy <br>
-    ![Que4a](assets/que4_a.png?raw=true)
+    ![Que4a](../assets/que4_a.png?raw=true)
 * **Who is the registered owner?**
     ```
     Ans: Greg schardt
     ```
-    ![Que5](assets/que5.png?raw=true)
+    ![Que5](../assets/que5.png?raw=true)
     * Autopsy <br>
     `Refer Que 3 autopsy img`
 * **What is the computer account name?**
     ```
     Ans: Mr.Evil w.r.t autopsy, FTK shows N-1A9ODN6ZXK4LQ as computer name.
     ```
-    ![Que6](assets/que6.png?raw=true)
-    ![Que6a](assets/que6_a.png?raw=true)
+    ![Que6](../assets/que6.png?raw=true)
+    ![Que6a](../assets/que6_a.png?raw=true)
 * **What is the primary domain name?**
     ```
     Ans: N-1A9ODN6ZXK4LQ w.r.t autopsy, FTK show Mr.Evil
     ```
-    ![Que7](assets/que7.png?raw=true)
+    ![Que7](../assets/que7.png?raw=true)
 * **When was the last recorded computer shutdown date/time?**
     ```
     Ans: Reg Key:- ShutdownTime	REG_BIN	C4 FC 00 07 4D 8C C4 01 , TIME:- 2004-08-27 15:46:33.1092164 Z UTC
     ```
-    ![Que8](assets/que8.png?raw=true)
-    ![Que8_2](assets/que8_2.png?raw=true) <br>
+    ![Que8](../assets/que8.png?raw=true)
+    ![Que8_2](../assets/que8_2.png?raw=true) <br>
     `Converter: https://www.digital-detective.net/dcode/`
 * **How many accounts are recorded (total number)?**
     ```
     Ans: 5, Administrator,Guest,HelpAssistant,Mr.Evil,SUPPORT_388945a0
     ```
-    ![Que9](assets/que9.png?raw=true)
+    ![Que9](../assets/que9.png?raw=true)
 
 * **What is the account name of the user who mostly uses the computer?**
     ```
     Ans: Mr.Evil, 15 logins
     ```
-    ![Que10](assets/que10.png?raw=true)
+    ![Que10](../assets/que10.png?raw=true)
 * **Who was the last user to logon to the computer?**
 
 * **A search for the name of “G=r=e=g S=c=h=a=r=d=t” reveals multiple hits. One of these proves that G=r=e=g S=c=h=a=r=d=t is Mr. Evil and is also the administrator of this computer. What file is it? What software program does this file relate to?**
