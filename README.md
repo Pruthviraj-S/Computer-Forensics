@@ -37,8 +37,11 @@ Any names in the forensic image are fictional and do not refer to real people.
 ### Evidences:
 * **What is the image hash? Does the acquisition and verification hash match?**
     ```
-    Ans: aee4fcd9301c03b3b054623ca261959a, no acquistion hash found.
+    Ans: aee4fcd9301c03b3b054623ca261959a, Hash matches.
+
+    ⮞ Found in Data Sources-> File Metadata
     ```
+    ![Que1](assets/Images/que1.png?raw=true)
 * **What operating system was used on the computer?**
     ```
     Ans: Windows XP Professsional
@@ -55,10 +58,7 @@ Any names in the forensic image are fictional and do not refer to real people.
     ⮞ Registry Key: “HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\InstallDate”
     ⮞ Key Path: “C:\Windows\system32\config\Software\Microsoft\Windows NT\CurrentVersion\InstallDate”
     ```
-    * FTK <br>
-    ![Que3](assets/Images/que3.png?raw=true)
-    * Autopsy <br>
-    ![Que3a](assets/Images/que3_a.png?raw=true)
+    ![Que3](assets/Images/que3_a.png?raw=true)
 * **What is the timezone settings?**
     ```
     Ans: Central Daylight Time
@@ -66,10 +66,7 @@ Any names in the forensic image are fictional and do not refer to real people.
     ⮞ Registry Key: “HKEY_LOCAL_MACHINE\system\CurrentControlSet\Control\TimeZoneInformation”
     ⮞ Key Path: “C:\windows\system32\config\system\CurrentControlSet\Control\TimeZoneInformation”
     ```
-    * FTK <br>
-    ![Que4](assets/Images/que4.png?raw=true)
-    * Autopsy <br>
-    ![Que4a](assets/Images/que4_a.png?raw=true)
+    ![Que4](assets/Images/que4_a.png?raw=true)
 * **Who is the registered owner?**
     ```
     Ans: Greg schardt
@@ -77,9 +74,7 @@ Any names in the forensic image are fictional and do not refer to real people.
     ⮞ Registry Key: “HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\RegisteredOwner”
     ⮞ Key Path: “C:\windows\system32\config\software\Microsoft\Windows NT\CurrentVersion\RegisteredOwner”
     ```
-    ![Que5](assets/Images/que5.png?raw=true)
-    * Autopsy <br>
-    `Refer Que 3 autopsy img`
+    ![Que5](assets/Images/que3_a.png?raw=true)
 * **What is the computer account name?**
     ```
     Ans: Mr.Evil w.r.t autopsy, FTK shows N-1A9ODN6ZXK4LQ as computer name.
@@ -87,8 +82,7 @@ Any names in the forensic image are fictional and do not refer to real people.
     ⮞ Path: “C:\windows\system32\config\SAM”
     ⮞ Registry Key: “HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon”
     ```
-    ![Que6](assets/Images/que6.png?raw=true)
-    ![Que6a](assets/Images/que6_a.png?raw=true)
+    ![Que6](assets/Images/que6_a.png?raw=true)
 * **What is the primary domain name?**
     ```
     Ans: N-1A9ODN6ZXK4LQ w.r.t autopsy, FTK show Mr.Evil
