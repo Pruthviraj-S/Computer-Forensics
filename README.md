@@ -17,7 +17,7 @@
 # Computer Forensic Reference Data Sets(CFReDS) Case Studies
 
 <p align='center'>
-<img alt='cfreds' src='assets/Images/cfreds.png' width='256'>
+<img alt='cfreds' src='assets/Images/cfreds.png' width='156'>
 </p>
 
 ## Case 1: Dell Hacking Case 
@@ -42,12 +42,18 @@ Any names in the forensic image are fictional and do not refer to real people.
 * **What operating system was used on the computer?**
     ```
     Ans: Windows XP Professsional
+
+    ⮞ Found in Data Source->image file->file metadata
+    ⮞ Found in "C:\Boot.ini"
     ```
     ![Que2](assets/Images/que2.png?raw=true)
     ![Que2_2](assets/Images/que2_2.png?raw=true)
 * **When was the install date?**
     ```
     Ans: Thursday, August 19, 2004 10:48:27 PM UTC
+     
+    ⮞ Registry Key: “HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\InstallDate”
+    ⮞ Key Path: “C:\Windows\system32\config\Software\Microsoft\Windows NT\CurrentVersion\InstallDate”
     ```
     * FTK <br>
     ![Que3](assets/Images/que3.png?raw=true)
@@ -56,6 +62,9 @@ Any names in the forensic image are fictional and do not refer to real people.
 * **What is the timezone settings?**
     ```
     Ans: Central Daylight Time
+    
+    ⮞ Registry Key: “HKEY_LOCAL_MACHINE\system\CurrentControlSet\Control\TimeZoneInformation”
+    ⮞ Key Path: “C:\windows\system32\config\system\CurrentControlSet\Control\TimeZoneInformation”
     ```
     * FTK <br>
     ![Que4](assets/Images/que4.png?raw=true)
@@ -64,6 +73,9 @@ Any names in the forensic image are fictional and do not refer to real people.
 * **Who is the registered owner?**
     ```
     Ans: Greg schardt
+    
+    ⮞ Registry Key: “HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\RegisteredOwner”
+    ⮞ Key Path: “C:\windows\system32\config\software\Microsoft\Windows NT\CurrentVersion\RegisteredOwner”
     ```
     ![Que5](assets/Images/que5.png?raw=true)
     * Autopsy <br>
@@ -71,17 +83,26 @@ Any names in the forensic image are fictional and do not refer to real people.
 * **What is the computer account name?**
     ```
     Ans: Mr.Evil w.r.t autopsy, FTK shows N-1A9ODN6ZXK4LQ as computer name.
+
+    ⮞ Path: “C:\windows\system32\config\SAM”
+    ⮞ Registry Key: “HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon”
     ```
     ![Que6](assets/Images/que6.png?raw=true)
     ![Que6a](assets/Images/que6_a.png?raw=true)
 * **What is the primary domain name?**
     ```
     Ans: N-1A9ODN6ZXK4LQ w.r.t autopsy, FTK show Mr.Evil
+
+    ⮞ Registry Key: “HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon”
+    ⮞ Key Path: “C:\windows\system32\config\software\Microsoft\Windows NT\CurrentVersion\Winlogon”
     ```
     ![Que7](assets/Images/que7.png?raw=true)
 * **When was the last recorded computer shutdown date/time?**
     ```
-    Ans: Reg Key:- ShutdownTime	REG_BIN	C4 FC 00 07 4D 8C C4 01 , TIME:- 2004-08-27 15:46:33.1092164 Z UTC
+    Ans: ShutdownTime	REG_BIN	C4 FC 00 07 4D 8C C4 01 , TIME:- 2004-08-27 15:46:33.1092164 Z UTC
+    ⮞ Registry Key: “HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Windows\ShutdownTime”
+    ⮞ Key Path: “C:\windows\system32\config\system\CurrentControlSet\Control\Windows\ShutdownTime”
+    ⮞ Key Path(2nd method): “C:\WINDOWS\system32\config\software\Microsoft\WindowNT\CurrentVersion\Prefetcher\ExitTime”
     ```
     ![Que8](assets/Images/que8.png?raw=true)
     ![Que8_2](assets/Images/que8_2.png?raw=true) <br>
@@ -89,17 +110,22 @@ Any names in the forensic image are fictional and do not refer to real people.
 * **How many accounts are recorded (total number)?**
     ```
     Ans: 5, Administrator,Guest,HelpAssistant,Mr.Evil,SUPPORT_388945a0
+    ⮞ Path: “C:\windows\system32\config\SAM”
+    ⮞ Can also be found in OS accounts tab in tree view.
     ```
     ![Que9](assets/Images/que9.png?raw=true)
 
 * **What is the account name of the user who mostly uses the computer?**
     ```
     Ans: Mr.Evil, 15 logins
+    ⮞ Found in OS  accounts tab in tree view.
     ```
     ![Que10](assets/Images/que10.png?raw=true)
 * **Who was the last user to logon to the computer?**
     ```
     Ans: Mr.Evil
+    ⮞ Registry Key: “HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon”
+    ⮞ Key Path: “C:\windows\system32\config software\Microsoft\Windows NT\CurrentVersion\Winlogon”
     ```
 * **A search for the name of “G=r=e=g S=c=h=a=r=d=t” reveals multiple hits. One of these proves that G=r=e=g S=c=h=a=r=d=t is Mr. Evil and is also the administrator of this computer. What file is it? What software program does this file relate to?**
     ```
