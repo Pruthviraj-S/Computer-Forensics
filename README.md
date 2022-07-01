@@ -16,15 +16,24 @@
 
 # Computer Forensic Reference Data Sets(CFReDS) Case Studies
 
-## Case 1: Dell Hacking Case
+<p align='center'>
+<img alt='cfreds' src='assets/Images/cfreds.png' width='256'>
+</p>
+
+## Case 1: Dell Hacking Case 
 ### Scenario:
 > On 09/20/04 , a Dell CPi notebook computer, serial # VLQLW, was found     abandoned along with a wireless PCMCIA card and an external homemade 802.11b antennae. It is suspected that this computer was used for hacking purposes, although cannot be tied to a hacking suspect, G=r=e=g S=c=h=a=r=d=t. (The equal signs are just to prevent web crawlers from indexing this name; there are no equal signs in the image files.) 
     
 > Schardt also goes by the online nickname of “Mr. Evil” and some of his associates have said that he would park his vehicle within range of Wireless Access Points (like Starbucks and other T-Mobile Hotspots) where he would then intercept internet traffic, attempting to get credit card numbers, usernames & passwords.
 
 > Find any hacking software, evidence of their use, and any data that might have been generated. Attempt to tie the computer to the suspect, G=r=e=g S=c=h=a=r=d=t.
-
-**Any names in the forensic image are fictional and do no refer to real people.**
+```yaml
+Any names in the forensic image are fictional and do not refer to real people.
+```
+### Pre-requisites
+* [Autopsy](https://www.autopsy.com/download/), a free forensic imager tool.
+* [Hacking Case Image](https://cfreds-archive.nist.gov/Hacking_Case.html), from CFREDS archives.
+* [FTK](https://www.exterro.com/product-digital-forensics#PD_forensic-toolkit-ftk), paid imaging tool (optional).
 ### Evidences:
 * **What is the image hash? Does the acquisition and verification hash match?**
     ```
@@ -89,45 +98,90 @@
     ```
     ![Que10](assets/Images/que10.png?raw=true)
 * **Who was the last user to logon to the computer?**
-
+    ```
+    Ans: Mr.Evil
+    ```
 * **A search for the name of “G=r=e=g S=c=h=a=r=d=t” reveals multiple hits. One of these proves that G=r=e=g S=c=h=a=r=d=t is Mr. Evil and is also the administrator of this computer. What file is it? What software program does this file relate to?**
-
+    ```
+    Ans:
+    ```
 * **List the network cards used by this computer**
-
+    ```
+    Ans:
+    ```
 * **This same file reports the IP address and MAC address of the computer. What are they?**
-
+    ```
+    Ans:
+    ```
 * **An internet search for vendor name/model of NIC cards by MAC address can be used to find out which network interface was used. In the above answer, the first 3 hex characters of the MAC address report the vendor of the card. Which NIC card was used during the installation and set-up for LOOK@LAN?**
-
+    ```
+    Ans:
+    ```
 * **Find 6 installed programs that may be used for hacking.**
-
+    ```
+    Ans:
+    ```
 * **What is the SMTP email address for Mr. Evil?**
-
+    ```
+    Ans:
+    ```
 * ***What are the NNTP (news server) settings for Mr. Evil?***
-
+    ```
+    Ans:
+    ```
 * **What two installed programs show this information?**
-
+    ```
+    Ans:
+    ```
 * **List 5 newsgroups that Mr. Evil has subscribed to?**
-
+    ```
+    Ans:
+    ```
 * **A popular IRC (Internet Relay Chat) program called MIRC was installed.  What are the user settings that was shown when the user was online and in a chat channel?**
-
+    ```
+    Ans:
+    ```
 * **This IRC program has the capability to log chat sessions. List 3 IRC channels that the user of this computer accessed.**
-
+    ```
+    Ans:
+    ```
 * **Ethereal, a popular “sniffing” program that can be used to intercept wired and wireless internet packets was also found to be installed. When TCP packets are collected and re-assembled, the default save directory is that users \My Documents directory. What is the name of the file that contains the intercepted data?**
+    ```
+    Ans:
+    ```
 * **Viewing the file in a text format reveals much information about who and what was intercepted. What type of wireless computer was the victim (person who had his internet surfing recorded) using?**
-
+    ```
+    Ans:
+    ```
 * **What websites was the victim accessing?**
-
+    ```
+    Ans:
+    ```
 * **Search for the main users web based email address. What is it?**
-
+    ```
+    Ans:
+    ```
 * **Yahoo mail, a popular web based email service, saves copies of the email under what file name?**
-
+    ```
+    Ans:
+    ```
 * **How many executable files are in the recycle bin?**
-
+    ```
+    Ans:
+    ```
 * **Are these files really deleted?**
-
+    ```
+    Ans:
+    ```
 * **How many files are actually reported to be deleted by the file system?**
-
+    ```
+    Ans:
+    ```
 * **Perform a Anti-Virus check. Are there any viruses on the computer?**
+    ```
+    Ans:
+    ```
+<br>
 
 ### Refrences
 
