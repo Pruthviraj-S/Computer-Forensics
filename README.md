@@ -118,9 +118,10 @@ Any names in the forensic image are fictional and do not refer to real people.
 * **Who was the last user to logon to the computer?**
     ```
     Ans: Mr.Evil
-    ⮞ Registry Key: “HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon”
+    ⮞ Registry Key: “HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon” -> Defaultusername
     ⮞ Key Path: “C:\windows\system32\config software\Microsoft\Windows NT\CurrentVersion\Winlogon”
     ```
+    ![Que11](assets/Images/que11.png?raw=true)
 * **A search for the name of “G=r=e=g S=c=h=a=r=d=t” reveals multiple hits. One of these proves that G=r=e=g S=c=h=a=r=d=t is Mr. Evil and is also the administrator of this computer. What file is it? What software program does this file relate to?**
     ```
     Ans:
