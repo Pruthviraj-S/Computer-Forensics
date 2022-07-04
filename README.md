@@ -4,7 +4,7 @@
 
 <p align="center">
 <a href="#"><img title="dfis" src="assets/Images/logo.png" width='256'></a> 
-<p align='center' style="font-size:48px; font-family: cursive; "> Computer Forensics </p>
+<p align='center' style="font-size:48px; font-family: cursive; "> Dell Hacking Case </p>
 </p>
 
 <p align="center">
@@ -119,7 +119,7 @@ Any names in the forensic image are fictional and do not refer to real people.
 
 * **How many accounts are recorded (total number)?**
     ```
-    Ans: 5, Administrator,Guest,HelpAssistant,Mr.Evil,SUPPORT_388945a0
+    Ans: 5, Administrator, Guest, HelpAssistant, Mr.Evil, SUPPORT_388945a0
     ⮞ Path: “C:\windows\system32\config\SAM”
     ⮞ Can also be found in OS accounts tab in tree view.
     ```
@@ -144,7 +144,7 @@ Any names in the forensic image are fictional and do not refer to real people.
     ```
     Ans: irunin.ini, Look@LAN: program to monitor user over lan.
     ⮞ We use keyword search to search for the name and get 10 results.
-    ⮞ “C:\Program Files\Look@LAN\irunin.ini” contains interesting info.  According to it LANUSER: Mr.evil and RegOwner: Greg Schardt. Thus both are same users.
+    ⮞ “C:\Program Files\Look@LAN\irunin.ini” contains interesting info.  According to it we can see several entries with name Mr.Evil, LANUSER: Mr.evil and RegOwner: Greg Schardt. Thus both are same users.
     ⮞ ISUSERNTADMIN is set to true which means the user is administrator.
     ```
     ![Que12](assets/Images/que12.png?raw=true)
@@ -176,16 +176,19 @@ Any names in the forensic image are fictional and do not refer to real people.
 
 * **Find 6 installed programs that may be used for hacking.**
     ```
-    Ans: 1) 123WASP:- Freeware to get all stored passwords.
-    2) Anonymizer:- Tool used to create a proxy.
-    3) Cain :- password recovery tool for Microsoft Windows.
-    4) Ethereal:- Packet sniffing tool
-    5) Look@LAN:- Network monitoring tool
-    6) NetStumbler:- wireless networking tool to hack wifi password
-
+    Ans: 
     ⮞ Go to installed programs in left-tree pane.
     ⮞ We will go thru each of them and search on google and check which can be used for malicioius activity.
     ```
+    |       **Software**      |                 **Description**                |
+    |:-----------------------:|:----------------------------------------------|
+    |         123WASP         | Freeware to get all stored passwords           |
+    |        Anonymizer       | Tool used to create a proxy                    |
+    | Cain & Abel v2.5 beta45 | password recovery tool for Microsoft Windows   |
+    |         Ethereal        | Packet sniffing tool                           |
+    |         Look@LAN        | Network monitoring tool                        |
+    |       NetStumbler       | wireless networking tool to hack wifi password |
+
     ![Que16](assets/Images/que16.png?raw=true)
 
 * **What is the SMTP email address for Mr. Evil?**
@@ -198,16 +201,28 @@ Any names in the forensic image are fictional and do not refer to real people.
 
 * ***What are the NNTP (news server) settings for Mr. Evil?***
     ```
-    Ans: Servername: news.dallas.sbcglobal.net, Server Password: whoknowsme@sbcglobal.net
+    Ans: 
     ⮞ We do a keyword search for NNTP and look for it in NTUSER.DAT file.
     ⮞ Path:- “C:\Documents and Settings\Mr. Evil\NTUSER.DAT”
     ```
+    |      **Server Name**      |    **Server username**   |        **Server Password**        |
+    |:-------------------------:|:------------------------:|:---------------------------------:|
+    | news.dallas.sbcglobal.net | whoknowsme@sbcglobal.net | news.dallas.sbcglobal.netF6E2BA30 |
+
     ![Que18](assets/Images/que18.png?raw=true)
 
 * **What two installed programs show this information?**
     ```
-    Ans:
+    Ans: 
+    ⮞ Multiple mail clients are found in Path :- “C:\windows\system32\config\software\clients\mail”
+    ⮞ We do a keyword search for the server Username and find Agent.ini file which belongs to Forte Agent.
     ```
+    | **Clients:**     | Forte Mail | Hotmail | MSN Explorer | Outlook Express |
+    | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+
+    ![Que19](assets/Images/que19.png?raw=true)
+    ![Que19](assets/Images/que19_a.png?raw=true)
+
 * **List 5 newsgroups that Mr. Evil has subscribed to?**
     ```
     Ans:
