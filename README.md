@@ -213,24 +213,36 @@ Any names in the forensic image are fictional and do not refer to real people.
 
 * **What two installed programs show this information?**
     ```
-    Ans: 
+    Ans: Forte Agent and Outlook Express
     ⮞ Multiple mail clients are found in Path :- “C:\windows\system32\config\software\clients\mail”
     ⮞ We do a keyword search for the server Username and find Agent.ini file which belongs to Forte Agent.
+    ⮞ Keyword search for NNTP shows NTUSER.DAT which contains info for Outlook Express settings.
     ```
     | **Clients:**     | Forte Mail | Hotmail | MSN Explorer | Outlook Express |
     | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
 
     ![Que19](assets/Images/que19.png?raw=true)
-    ![Que19](assets/Images/que19_a.png?raw=true)
+    ![Que19](assets/Images/que19_2.png?raw=true)
 
 * **List 5 newsgroups that Mr. Evil has subscribed to?**
     ```
-    Ans:
+    Ans: Alt.binaries.hacking.utilities, Alt.stupidity.hackers.malicious, Free.binaries.hackers.malicious, Free.binaries.hacking.talentless.troll_haven, alt.dss.hack
+    ⮞ Keyword search for .dbx files or looking through Outlook Express directory shows files containing newsfeeds.
+    ⮞ Path:- C:\Document and Settings\Mr. Evil\Local Settings\Application Data\Identities\{EF086998–1115–4ECD-9B13 9ADC067B4929}\Microsoft\Outlook Express
     ```
+    ![Que20](assets/Images/que20.png?raw=true)
+
 * **A popular IRC (Internet Relay Chat) program called MIRC was installed.  What are the user settings that was shown when the user was online and in a chat channel?**
     ```
     Ans:
+    ⮞ Can be found in ini file inside mIRC directory located at “C:\Program Files\mIRC\mirc.ini”
     ```
+    | **User** | **Email** | **nick** | **anic** |
+    | :-----: | :-----: | :-----: | :-----: |
+    | Mini Me | none@of.ya | Mr | mrevilrulez |
+
+    ![Que21](assets/Images/que21.png?raw=true)
+
 * **This IRC program has the capability to log chat sessions. List 3 IRC channels that the user of this computer accessed.**
     ```
     Ans:
