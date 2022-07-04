@@ -176,12 +176,26 @@ Any names in the forensic image are fictional and do not refer to real people.
 
 * **Find 6 installed programs that may be used for hacking.**
     ```
-    Ans:
+    Ans: 1) 123WASP:- Freeware to get all stored passwords.
+    2) Anonymizer:- Tool used to create a proxy.
+    3) Cain :- password recovery tool for Microsoft Windows.
+    4) Ethereal:- Packet sniffing tool
+    5) Look@LAN:- Network monitoring tool
+    6) NetStumbler:- wireless networking tool to hack wifi password
+
+    ⮞ Go to installed programs in left-tree pane.
+    ⮞ We will go thru each of them and search on google and check which can be used for malicioius activity.
     ```
+    ![Que16](assets/Images/que16.png?raw=true)
+
 * **What is the SMTP email address for Mr. Evil?**
     ```
-    Ans:
+    Ans: whoknowsme@sbcglobal.net
+    ⮞ We do a keyword search for SMTP and look for it in NTUSER.DAT file.
+    ⮞ Path:- “C:\Documents and Settings\Mr. Evil\NTUSER.DAT”
     ```
+    ![Que17](assets/Images/que17.png?raw=true)
+
 * ***What are the NNTP (news server) settings for Mr. Evil?***
     ```
     Ans:
