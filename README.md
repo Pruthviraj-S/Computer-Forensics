@@ -109,6 +109,7 @@ Any names in the forensic image are fictional and do not refer to real people.
 * **When was the last recorded computer shutdown date/time?**
     ```
     Ans: ShutdownTime	REG_BIN	C4 FC 00 07 4D 8C C4 01 , TIME:- 2004-08-27 15:46:33.1092164 Z UTC
+
     ⮞ Registry Key: “HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Windows\ShutdownTime”
     ⮞ Key Path: “C:\windows\system32\config\system\CurrentControlSet\Control\Windows\ShutdownTime”
     ⮞ Key Path(2nd method): “C:\WINDOWS\system32\config\software\Microsoft\WindowNT\CurrentVersion\Prefetcher\ExitTime”
@@ -120,6 +121,7 @@ Any names in the forensic image are fictional and do not refer to real people.
 * **How many accounts are recorded (total number)?**
     ```
     Ans: 5, Administrator, Guest, HelpAssistant, Mr.Evil, SUPPORT_388945a0
+
     ⮞ Path: “C:\windows\system32\config\SAM”
     ⮞ Can also be found in OS accounts tab in tree view.
     ```
@@ -128,6 +130,7 @@ Any names in the forensic image are fictional and do not refer to real people.
 * **What is the account name of the user who mostly uses the computer?**
     ```
     Ans: Mr.Evil, 15 logins
+
     ⮞ Found in OS  accounts tab in tree view.
     ```
     ![Que10](assets/Images/que10.png?raw=true)
@@ -135,6 +138,7 @@ Any names in the forensic image are fictional and do not refer to real people.
 * **Who was the last user to logon to the computer?**
     ```
     Ans: Mr.Evil
+
     ⮞ Registry Key: “HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon” -> Defaultusername
     ⮞ Key Path: “C:\windows\system32\config\software\Microsoft\Windows NT\CurrentVersion\Winlogon”
     ```
@@ -143,6 +147,7 @@ Any names in the forensic image are fictional and do not refer to real people.
 * **A search for the name of “G=r=e=g S=c=h=a=r=d=t” reveals multiple hits. One of these proves that G=r=e=g S=c=h=a=r=d=t is Mr. Evil and is also the administrator of this computer. What file is it? What software program does this file relate to?**
     ```
     Ans: irunin.ini, Look@LAN: program to monitor user over lan.
+    
     ⮞ We use keyword search to search for the name and get 10 results.
     ⮞ “C:\Program Files\Look@LAN\irunin.ini” contains interesting info.  According to it we can see several entries with name Mr.Evil, LANUSER: Mr.evil and RegOwner: Greg Schardt. Thus both are same users.
     ⮞ ISUSERNTADMIN is set to true which means the user is administrator.
@@ -153,6 +158,7 @@ Any names in the forensic image are fictional and do not refer to real people.
 * **List the network cards used by this computer**
     ```
     Ans: 2, Xircom CardBus Ethernet 100 + Modem 56 (Ethernet Interface) & Compaq WL110 Wireless LAN PC Card
+
     ⮞ Registry Key: “HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkCards”
     ⮞ Key Path: “C:\windows\system32\config\software\Microsoft\Windows NT\CurrentVersion\NetworkCards”
     ```
@@ -162,6 +168,7 @@ Any names in the forensic image are fictional and do not refer to real people.
 * **This same file reports the IP address and MAC address of the computer. What are they?**
     ```
     Ans: Ip: 192.168.1.111, Mac addr: 00:10:a4:93:3e:09
+
     ⮞ Path: “C:\Program Files\Look@LAN\irunin.ini”
     ```
     ![Que14](assets/Images/que14.png?raw=true)
@@ -169,6 +176,7 @@ Any names in the forensic image are fictional and do not refer to real people.
 * **An internet search for vendor name/model of NIC cards by MAC address can be used to find out which network interface was used. In the above answer, the first 3 hex characters of the MAC address report the vendor of the card. Which NIC card was used during the installation and set-up for LOOK@LAN?**
     ```
     Ans: Xircom CardBus Ethernet 100 + Modem 56 (Ethernet Interface)
+
     ⮞ First 3 blocks show vendor info i.e 00:10:a4
     ⮞ Use any ip lookup website to find vendor
     ```
@@ -176,7 +184,6 @@ Any names in the forensic image are fictional and do not refer to real people.
 
 * **Find 6 installed programs that may be used for hacking.**
     ```
-    Ans: 
     ⮞ Go to installed programs in left-tree pane.
     ⮞ We will go thru each of them and search on google and check which can be used for malicioius activity.
     ```
@@ -194,6 +201,7 @@ Any names in the forensic image are fictional and do not refer to real people.
 * **What is the SMTP email address for Mr. Evil?**
     ```
     Ans: whoknowsme@sbcglobal.net
+
     ⮞ We do a keyword search for SMTP and look for it in NTUSER.DAT file.
     ⮞ Path:- “C:\Documents and Settings\Mr. Evil\NTUSER.DAT”
     ```
@@ -201,7 +209,6 @@ Any names in the forensic image are fictional and do not refer to real people.
 
 * ***What are the NNTP (news server) settings for Mr. Evil?***
     ```
-    Ans: 
     ⮞ We do a keyword search for NNTP and look for it in NTUSER.DAT file.
     ⮞ Path:- “C:\Documents and Settings\Mr. Evil\NTUSER.DAT”
     ```
@@ -214,6 +221,7 @@ Any names in the forensic image are fictional and do not refer to real people.
 * **What two installed programs show this information?**
     ```
     Ans: Forte Agent and Outlook Express
+
     ⮞ Multiple mail clients are found in Path :- “C:\windows\system32\config\software\clients\mail”
     ⮞ We do a keyword search for the server Username and find Agent.ini file which belongs to Forte Agent.
     ⮞ Keyword search for NNTP shows NTUSER.DAT which contains info for Outlook Express settings.
@@ -227,6 +235,7 @@ Any names in the forensic image are fictional and do not refer to real people.
 * **List 5 newsgroups that Mr. Evil has subscribed to?**
     ```
     Ans: Alt.binaries.hacking.utilities, Alt.stupidity.hackers.malicious, Free.binaries.hackers.malicious, Free.binaries.hacking.talentless.troll_haven, alt.dss.hack
+
     ⮞ Keyword search for .dbx files or looking through Outlook Express directory shows files containing newsfeeds.
     ⮞ Path:- C:\Document and Settings\Mr. Evil\Local Settings\Application Data\Identities\{EF086998–1115–4ECD-9B13 9ADC067B4929}\Microsoft\Outlook Express
     ```
@@ -234,7 +243,6 @@ Any names in the forensic image are fictional and do not refer to real people.
 
 * **A popular IRC (Internet Relay Chat) program called MIRC was installed.  What are the user settings that was shown when the user was online and in a chat channel?**
     ```
-    Ans:
     ⮞ Can be found in ini file inside mIRC directory located at “C:\Program Files\mIRC\mirc.ini”
     ```
     | **User** | **Email** | **nick** | **anic** |
