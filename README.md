@@ -161,12 +161,19 @@ Any names in the forensic image are fictional and do not refer to real people.
 
 * **This same file reports the IP address and MAC address of the computer. What are they?**
     ```
-    Ans:
+    Ans: Ip: 192.168.1.111, Mac addr: 00:10:a4:93:3e:09
+    ⮞ Path: “C:\Program Files\Look@LAN\irunin.ini”
     ```
+    ![Que14](assets/Images/que14.png?raw=true)
+
 * **An internet search for vendor name/model of NIC cards by MAC address can be used to find out which network interface was used. In the above answer, the first 3 hex characters of the MAC address report the vendor of the card. Which NIC card was used during the installation and set-up for LOOK@LAN?**
     ```
-    Ans:
+    Ans: Xircom CardBus Ethernet 100 + Modem 56 (Ethernet Interface)
+    ⮞ First 3 blocks show vendor info i.e 00:10:a4
+    ⮞ Use any ip lookup website to find vendor
     ```
+    ![Que15](assets/Images/que15.png?raw=true)
+
 * **Find 6 installed programs that may be used for hacking.**
     ```
     Ans:
