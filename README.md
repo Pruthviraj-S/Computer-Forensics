@@ -226,7 +226,7 @@ Any names in the forensic image are fictional and do not refer to real people.
     ⮞ We do a keyword search for the server Username and find Agent.ini file which belongs to Forte Agent.
     ⮞ Keyword search for NNTP shows NTUSER.DAT which contains info for Outlook Express settings.
     ```
-    | **Clients:**     | Forte Mail | Hotmail | MSN Explorer | Outlook Express |
+    | **Clients:** | Forte Mail | Hotmail | MSN Explorer | Outlook Express |
     | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
 
     ![Que19](assets/Images/que19.png?raw=true)
@@ -299,7 +299,8 @@ Any names in the forensic image are fictional and do not refer to real people.
     - https://cfreds-archive.nist.gov/
 
 <!-- * **Guide (ONLY SEEE WHEN NEEDED)**
-    - https://medium.com/@sshekhar01/cfreds-project-hacking-case-challenge-writeup-6a52883eac0b -->
+    - https://medium.com/@sshekhar01/cfreds-project-hacking-case-challenge-writeup-6a52883eac0b 
+    - https://mountimage.blogspot.com/ -->
 ## Disclaimer
 
 Contents of this repository are only meant for learning the aspects of computer forensics. Only use for educational purposes
