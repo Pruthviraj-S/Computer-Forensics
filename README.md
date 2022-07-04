@@ -21,6 +21,7 @@
 </p>
 
 ## Case 1: Dell Hacking Case 
+
 ### Scenario:
 > On 09/20/04 , a Dell CPi notebook computer, serial # VLQLW, was found             abandoned along with a wireless PCMCIA card and an external homemade 802.11b antennae. It is suspected that this computer was used for hacking purposes, although cannot be tied to a hacking suspect, G=r=e=g S=c=h=a=r=d=t. (The equal signs are just to prevent web crawlers from indexing this name; there are no equal signs in the image files.)  
 
@@ -35,11 +36,13 @@
 Any names in the forensic image are fictional and do not refer to real people.
 ```
 ### Pre-requisites
+
 * [Autopsy](https://www.autopsy.com/download/), a free forensic imager tool.
 * [Hacking Case Image](https://cfreds-archive.nist.gov/Hacking_Case.html), from CFREDS archives.
 * [FTK](https://www.exterro.com/product-digital-forensics#PD_forensic-toolkit-ftk), paid imaging tool (optional).
 
 ### Evidences:
+
 * **What is the image hash? Does the acquisition and verification hash match?**
     ```
     Ans: aee4fcd9301c03b3b054623ca261959a, MD5 Hash matches.
@@ -133,18 +136,29 @@ Any names in the forensic image are fictional and do not refer to real people.
     ```
     Ans: Mr.Evil
     ⮞ Registry Key: “HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon” -> Defaultusername
-    ⮞ Key Path: “C:\windows\system32\config software\Microsoft\Windows NT\CurrentVersion\Winlogon”
+    ⮞ Key Path: “C:\windows\system32\config\software\Microsoft\Windows NT\CurrentVersion\Winlogon”
     ```
     ![Que11](assets/Images/que11.png?raw=true)
 
 * **A search for the name of “G=r=e=g S=c=h=a=r=d=t” reveals multiple hits. One of these proves that G=r=e=g S=c=h=a=r=d=t is Mr. Evil and is also the administrator of this computer. What file is it? What software program does this file relate to?**
     ```
-    Ans:
+    Ans: irunin.ini, Look@LAN: program to monitor user over lan.
+    ⮞ We use keyword search to search for the name and get 10 results.
+    ⮞ “C:\Program Files\Look@LAN\irunin.ini” contains interesting info.  According to it LANUSER: Mr.evil and RegOwner: Greg Schardt. Thus both are same users.
+    ⮞ ISUSERNTADMIN is set to true which means the user is administrator.
     ```
+    ![Que12](assets/Images/que12.png?raw=true)
+    ![Que12_a](assets/Images/que12_a.png?raw=true)
+
 * **List the network cards used by this computer**
     ```
-    Ans:
+    Ans: 2, Xircom CardBus Ethernet 100 + Modem 56 (Ethernet Interface) & Compaq WL110 Wireless LAN PC Card
+    ⮞ Registry Key: “HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkCards”
+    ⮞ Key Path: “C:\windows\system32\config\software\Microsoft\Windows NT\CurrentVersion\NetworkCards”
     ```
+    ![Que13](assets/Images/que13.png?raw=true)
+    ![Que13_a](assets/Images/que13_a.png?raw=true)
+
 * **This same file reports the IP address and MAC address of the computer. What are they?**
     ```
     Ans:
@@ -227,9 +241,10 @@ Any names in the forensic image are fictional and do not refer to real people.
 <!-- * **Guide (ONLY SEEE WHEN NEEDED)**
     - https://medium.com/@sshekhar01/cfreds-project-hacking-case-challenge-writeup-6a52883eac0b -->
 ## Disclaimer
+
 Contents of this repository are only meant for learning the aspects of computer forensics. Only use for educational purposes
 ## Contact
-<p align='left'><a href='https://discord.com/channels/@me/495023063486824467'><img alt="Discord" src="https://img.shields.io/badge/Discord%20-%237289DA.svg?&style=for-the-badge&logo=discord&logoColor=white"/></a></p>
 
+<p align='left'><a href='https://discord.com/channels/@me/495023063486824467'><img alt="Discord" src="https://img.shields.io/badge/Discord%20-%237289DA.svg?&style=for-the-badge&logo=discord&logoColor=white"/></a></p>
 
 <!-- https://gist.github.com/joncardasis/e6494afd538a400722545163eb2e1fa5 , https://simpleicons.org/-->
