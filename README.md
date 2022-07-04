@@ -198,8 +198,12 @@ Any names in the forensic image are fictional and do not refer to real people.
 
 * ***What are the NNTP (news server) settings for Mr. Evil?***
     ```
-    Ans:
+    Ans: Servername: news.dallas.sbcglobal.net, Server Password: whoknowsme@sbcglobal.net
+    ⮞ We do a keyword search for NNTP and look for it in NTUSER.DAT file.
+    ⮞ Path:- “C:\Documents and Settings\Mr. Evil\NTUSER.DAT”
     ```
+    ![Que18](assets/Images/que18.png?raw=true)
+
 * **What two installed programs show this information?**
     ```
     Ans:
