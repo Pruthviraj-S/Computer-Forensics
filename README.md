@@ -104,7 +104,7 @@ Any names in the forensic image are fictional and do not refer to real people.
     ⮞ Registry Key: “HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon”
     ⮞ Key Path: “C:\windows\system32\config\software\Microsoft\Windows NT\CurrentVersion\Winlogon”
     ```
-    ![Que7](assets/Images/que7.png?raw=true)
+    ![Que7](assets/Images/placeholder.png?raw=true)
 
 * **When was the last recorded computer shutdown date/time?**
     ```
