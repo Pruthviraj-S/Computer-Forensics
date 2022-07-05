@@ -273,16 +273,37 @@ Any names in the forensic image are fictional and do not refer to real people.
 
 * **Viewing the file in a text format reveals much information about who and what was intercepted. What type of wireless computer was the victim (person who had his internet surfing recorded) using?**
     ```
-    Ans:
+    ⮞ We find the intercepted data stored at path “C:\Documents and Settings\Mr. Evil\interception”.
+    ⮞ Check in text format to find required information.
     ```
+    | **Computer** | **Browser** | **Intercept 1** | **Intercept 2** |
+    | :-----: | :-----: | :-----: | :-----: |
+    | Windows CE (Pocket PC) Version-4.20 | MS internet explorer 4.01 | Mobile.msn.com | MSN Hotmail |
+
+    ![Que24](assets/Images/que24.png?raw=true)
+    ![Que24_a](assets/Images/que24_a.png?raw=true)
+
 * **What websites was the victim accessing?**
     ```
-    Ans:
+    ⮞ We find the intercepted data stored at path “C:\Documents and Settings\Mr. Evil\interception”.
+    ⮞ Check in text format to find required information.
     ```
+    | **Intercept 1** | **Intercept 2** |
+    | :-----: | :-----: |
+    | Mobile.msn.com | MSN Hotmail |
+
+    ![Que25](assets/Images/que24.png?raw=true)
+    ![Que25_a](assets/Images/que24_a.png?raw=true)
+
 * **Search for the main users web based email address. What is it?**
     ```
-    Ans:
+    Ans: Yahoo acc: mrevilrulez@yahoo.com
+    ⮞ We search through web history tab in left side tree pane but there are 887 entries starting from year 1989. Thus we use timeline to filter the searches to scope of the case i.e 2004.
+    ⮞ Filtering timeline using "Limit event types to -> web activity" and  choose detail view mode. This will show us visited urls. We find answer in text section of the files.
     ```
+    ![Que26](assets/Images/que26.png?raw=true)
+    ![Que26_a](assets/Images/que26_a.png?raw=true)
+
 * **Yahoo mail, a popular web based email service, saves copies of the email under what file name?**
     ```
     Ans:
