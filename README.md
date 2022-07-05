@@ -333,12 +333,28 @@ Any names in the forensic image are fictional and do not refer to real people.
     
 * **How many files are actually reported to be deleted by the file system?**
     ```
-    Ans:
+    Ans: 365 files.
+
+    ⮞ If we check the deleted files -> file system in left tree pane we can see that file system reports 365 deleted files.
+    ⮞ Another possible answer can be the INFO2 file inside recycler folder. It reports 4 unique deleted files.
+    ⮞ In Official answer sheet it said "3" is the answer. Maybe it was a misprint.
     ```
+    ![Que30](assets/Images/que30.png?raw=true)
+    ![Que30_a](assets/Images/que30_a.png?raw=true)
+
 * **Perform a Anti-Virus check. Are there any viruses on the computer?**
     ```
-    Ans:
+    Ans: unix_hack.tgz		
+
+    ⮞ Autopsy autoruns antivirus scans and any possible actors can be found inside "Interesting Files" category in left tree pane.
+    ⮞ Autopsy reports a possible zip bomb.
     ```
+    | **File Name** | **Type** | **Configuration** | **Description** | **Path** |
+    | :-----: | :-----: | :-----: | :-----: | :-----: |
+    | unix_hack.tgz | Zip Bomb | Possible Zip-Bomb | Zip Bomb Detected system.tgz | C:/My Documents/FOOTPRINTING/UNIX/unix_hack.tgz |
+
+    ![Que31](assets/Images/que31.png?raw=true)
+
 <br>
 
 ### Refrences
@@ -348,7 +364,9 @@ Any names in the forensic image are fictional and do not refer to real people.
 
 <!-- * **Guide (ONLY SEEE WHEN NEEDED)**
     - https://medium.com/@sshekhar01/cfreds-project-hacking-case-challenge-writeup-6a52883eac0b 
-    - https://mountimage.blogspot.com/ -->
+    - https://mountimage.blogspot.com/ 
+    - https://drive.google.com/file/d/1V5mBsIcalexG_1gRuM2AE-j7WG0ToOfe/view 
+-->
 ## Disclaimer
 
 Contents of this repository are only meant for learning the aspects of computer forensics. Only use for educational purposes
