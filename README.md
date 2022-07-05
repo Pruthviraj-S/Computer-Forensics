@@ -4,14 +4,14 @@
 
 <p align="center">
 <a href="#"><img title="dfis" src="assets/Images/logo.png" width='256'></a> 
-<p align='center' style="font-size:48px; font-family: cursive; "> Dell Hacking Case </p>
+<p align='center' style="font-size:48px; font-family: cursive; "> CFREDS: Dell Hacking Case </p>
 </p>
 
 <p align="center">
 <a href="https://github.com/Pruthviraj-S"><img title="Author" src="https://img.shields.io/badge/Author-Pruthviraj--S-red.svg?style=for-the-badge&logo=github"></a>
 <a href="#"><img title="Open Source" src="https://img.shields.io/badge/Open%20Source-%E2%9D%A4-green?style=for-the-badge"></a>
 <a href="#"><img title="License" src="https://img.shields.io/github/license/Pruthviraj-S/Computer-Forensics?style=for-the-badge"></a>
-<a href="#"><img title="Autopsy" src="https://img.shields.io/badge/Tool-Autopsy-orange.svg?style=for-the-badge&logo="></a>
+<a href="#"><img title="Autopsy" src="https://img.shields.io/badge/Autopsy-V4.19.3-orange.svg?style=for-the-badge&logo="></a>
 </p>
 
 # Computer Forensic Reference Data Sets(CFReDS) Case Studies
@@ -23,21 +23,18 @@
 ## Case 1: Dell Hacking Case 
 
 ### Scenario:
-> On 09/20/04 , a Dell CPi notebook computer, serial # VLQLW, was found             abandoned along with a wireless PCMCIA card and an external homemade 802.11b antennae. It is suspected that this computer was used for hacking purposes, although cannot be tied to a hacking suspect, G=r=e=g S=c=h=a=r=d=t. (The equal signs are just to prevent web crawlers from indexing this name; there are no equal signs in the image files.)  
-
+> On 09/20/04 , a Dell CPi notebook computer, serial # VLQLW, was found abandoned along with a wireless PCMCIA card and an external homemade 802.11b antennae. It is suspected that this computer was used for hacking purposes, although cannot be tied to a hacking suspect, G=r=e=g S=c=h=a=r=d=t. (The equal signs are just to prevent web crawlers from indexing this name; there are no equal signs in the image files.)  
 
 > Schardt also goes by the online nickname of “Mr. Evil” and some of his associates have said that he would park his vehicle within range of Wireless Access Points (like Starbucks and other T-Mobile Hotspots) where he would then intercept internet traffic, attempting to get credit card numbers, usernames & passwords.
 
-
 > Find any hacking software, evidence of their use, and any data that might have been generated. Attempt to tie the computer to the suspect, G=r=e=g S=c=h=a=r=d=t.
-
 
 ```yaml
 Any names in the forensic image are fictional and do not refer to real people.
 ```
 ### Pre-requisites
 
-* [Autopsy](https://www.autopsy.com/download/), a free forensic imager tool.
+* [Autopsy](https://www.autopsy.com/download/), a free forensic imager tool based on [Sleuth Kit](https://www.sleuthkit.org/).
 * [Hacking Case Image](https://cfreds-archive.nist.gov/Hacking_Case.html), from CFREDS archives.
 * [FTK](https://www.exterro.com/product-digital-forensics#PD_forensic-toolkit-ftk), paid imaging tool (optional).
 
@@ -362,11 +359,9 @@ Any names in the forensic image are fictional and do not refer to real people.
 * **CFREDS ARCHIVE FOR DFIS CASES**
     - https://cfreds-archive.nist.gov/
 
-<!-- * **Guide (ONLY SEEE WHEN NEEDED)**
-    - https://medium.com/@sshekhar01/cfreds-project-hacking-case-challenge-writeup-6a52883eac0b 
-    - https://mountimage.blogspot.com/ 
+* **MountImage**
     - https://drive.google.com/file/d/1V5mBsIcalexG_1gRuM2AE-j7WG0ToOfe/view 
--->
+
 ## Disclaimer
 
 Contents of this repository are only meant for learning the aspects of computer forensics. Only use for educational purposes
