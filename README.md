@@ -230,7 +230,7 @@ Any names in the forensic image are fictional and do not refer to real people.
     | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
 
     ![Que19](assets/Images/que19.png?raw=true)
-    ![Que19](assets/Images/que19_2.png?raw=true)
+    ![Que19_2](assets/Images/que19_2.png?raw=true)
 
 * **List 5 newsgroups that Mr. Evil has subscribed to?**
     ```
@@ -253,12 +253,24 @@ Any names in the forensic image are fictional and do not refer to real people.
 
 * **This IRC program has the capability to log chat sessions. List 3 IRC channels that the user of this computer accessed.**
     ```
-    Ans:
+    ⮞ We go into mIRC log directiory located at “C:\Program Files\mIRC\logs”. It contains logs of chat sessions.
     ```
+    | **Logs** | 1 | 2 | 3 |
+    | :-----------: | :-----------: | :-----------: | :-----------: | 
+    | **Chat Sessions:** | Chataholics.UnderNet | Elite.Hackers.UnderNet | thedarktower.AfterNET |
+
+    ![Que22](assets/Images/que22.png?raw=true)
+
 * **Ethereal, a popular “sniffing” program that can be used to intercept wired and wireless internet packets was also found to be installed. When TCP packets are collected and re-assembled, the default save directory is that users \My Documents directory. What is the name of the file that contains the intercepted data?**
     ```
-    Ans:
+    Ans: recent.capture_file: C:\Documents and Settings\Mr. Evil\interception
+    
+    ⮞ We got to following path to look for recents of ethereal. 
+    ⮞ Path:- “C:\Documents and Settings\Mr. Evil\Application Data\Ethereal\recent”
+    ⮞ We find that recent intercepted data is stored at path “C:\Documents and Settings\Mr. Evil\interception”.
     ```
+    ![Que23](assets/Images/que23.png?raw=true)
+
 * **Viewing the file in a text format reveals much information about who and what was intercepted. What type of wireless computer was the victim (person who had his internet surfing recorded) using?**
     ```
     Ans:
