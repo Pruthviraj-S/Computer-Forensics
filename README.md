@@ -306,16 +306,31 @@ Any names in the forensic image are fictional and do not refer to real people.
 
 * **Yahoo mail, a popular web based email service, saves copies of the email under what file name?**
     ```
-    Ans:
+    Ans: ShowLetter[1].htm	
+
+    ⮞ We go to Keyword hits -> Email address -> req expression -> search for the email we found. 
+    ⮞ We find the copies inside one of the showletter.htm files.
     ```
+    ![Que27](assets/Images/que27.png?raw=true)
+
 * **How many executable files are in the recycle bin?**
     ```
-    Ans:
+    Ans: 4 P.E files found.
+    ⮞ Recycle bin files can be find inside recycler directory. 
+    ⮞ Path: “C:\RECYCLER\S-1–5–21–2000478354–688789844–1708537768–1003\”
     ```
+    ![Que28](assets/Images/que28.png?raw=true)
+
 * **Are these files really deleted?**
     ```
-    Ans:
+    Ans: No.
+
+    ⮞ When windows deletes files they are just deallocted and removed from allocation table i.e MFT table. but the data still exists in the location untill it is overwritten.
+    ⮞ In case of recycle bin, the files are not deallocated instead are just moved to recycler directory.
+    ⮞ File status can be seen in file metadata.
     ```
+    ![Que29](assets/Images/que29.png?raw=true)
+    
 * **How many files are actually reported to be deleted by the file system?**
     ```
     Ans:
