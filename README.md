@@ -107,8 +107,9 @@ Any names in the forensic image are fictional and do not refer to real people.
     ```
     Ans: ShutdownTime	REG_BIN	C4 FC 00 07 4D 8C C4 01 , TIME:- 2004-08-27 15:46:33.1092164 Z UTC
 
-    ⮞ Registry Key: “HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Windows\ShutdownTime”
-    ⮞ Key Path: “C:\windows\system32\config\system\CurrentControlSet\Control\Windows\ShutdownTime”
+    ⮞ Controlset001 contains last shutdown settings i.e latest, Controlset002 contains last best settings. Both are backups of subkey CurrentControlset subkey
+    ⮞ Registry Key: “HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet001\Control\Windows\ShutdownTime”
+    ⮞ Key Path: “C:\windows\system32\config\system\CurrentControlSet001\Control\Windows\ShutdownTime”
     ⮞ Key Path(2nd method): “C:\WINDOWS\system32\config\software\Microsoft\WindowNT\CurrentVersion\Prefetcher\ExitTime”
     ```
     ![Que8](assets/Images/que8.png?raw=true)
